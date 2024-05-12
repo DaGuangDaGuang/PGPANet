@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### 1. Usage
 + Prepare the data:
     - Download datasets [LEVIR](https://justchenhao.github.io/LEVIR/), [WHU](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html), and [SYSU](https://github.com/liumency/SYSU-CD)
@@ -50,4 +49,3 @@ Prerequisites for Python:
 
 Creating a virtual environment in the terminal: conda create -n A2Net python=3.8
 Installing necessary packages: pip install -r requirements.txt 
->>>>>>> 2685a96c0ecd5d3f957cf8d82ac0a094adc71efb
