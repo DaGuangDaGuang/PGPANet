@@ -21,7 +21,7 @@
         └─list
     ```
     
-  + Prerequisites for Python:
++ Prerequisites for Python:
     - Creating a virtual environment in the terminal: `conda create -n PGPANet python=3.8`
     - Installing necessary packages: `pip install -r requirements.txt `
 
