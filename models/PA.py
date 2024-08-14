@@ -74,7 +74,7 @@ class Identity(nn.Module):
     def __init__(self):
         super(Identity, self).__init__()
 
-    def forward(self, input_de):
+    def forward(self, input_en, input_de, descriptors):
         return input_de
 
 class GIDP(nn.Module):
