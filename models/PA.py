@@ -60,7 +60,7 @@ class PA(nn.Module):
             if i == 2:
                 descriptors[i] = self.gidp_d4(feat)
             if i == 1:
-                descriptors[i] = self.sab_d3(feat)
+                descriptors[i] = self.gidp_d3(feat)
             if i == 0:
                 descriptors[i] = self.gidp_d2(feat)
             feat_up = self.cfb_d4[i](feat_i, feat_up, descriptors[2])
