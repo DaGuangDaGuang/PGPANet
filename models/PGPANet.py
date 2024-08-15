@@ -189,7 +189,7 @@ class PGPANet(nn.Module):
         self.one_stage = PG(in_channels=encoder_channels[2:], out_channels=1)
         self.conv_down = nn.Conv2d(in_channels=1, out_channels=1, kernel_size=3, stride=2)
         self.skip = AttentionConnection()
-        self.head = PA(num_classes, norm_layer=nn.BatchNorm2d, up_kwargs = {'mode': 'bilinear', 'align_corners': True})
+        self.head = PA(norm_layer=nn.BatchNorm2d, up_kwargs = {'mode': 'bilinear', 'align_corners': True})
 
         use_deconv = False
         self.up5_4 = ScaleUpsample(use_deconv=use_deconv, num_channels=encoder_channels[-1], scale_factor=2)
